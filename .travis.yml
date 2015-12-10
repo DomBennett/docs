@@ -2,9 +2,7 @@ language: ruby
 rvm:
 - 2.1
 script:
-- bundle exec script/build.sh
-- bundle exec script/test.sh
-- bundle exec script/deploy.sh
+- bundle exec script/simple_script.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
