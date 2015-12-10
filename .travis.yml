@@ -1,7 +1,11 @@
 language: ruby
 rvm:
-  - 2.1
-script: "./script/deploy.sh"
+- 2.1
+script:
+- script/build.sh
+- script/test.sh
+- script/deploy.sh
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  - secure: ZEtmR2JG8jqFjfU/DfrXuicWeap0OZ4eFlIozF/tMWDjc2igFd6cX+ei4t81oeDhUxTvoMdw7Kq3n0oDYNxne/lYXzSmG5lni/kvhQ0jxNMeHrw75RvksXMl2kK+duyrYN8eOodjpi/3zrqbniXdPHzP+VhvBk3WxHB/Fxy0DPjP4sGyBuQ7K8PJcLLumKb/Hl+w3I277vnOUW0uKKQpDAG7fe1hqs8qh11CfGrEeZGIYoHNKUQ64SkpnnNFaOTv4D6xj2J0ehbUNSPs5+BPVJ7j/a9xqBqJPtOamZDDnJpEaYjfh4LQVBdTZlwj8SXEEYpul4dboRjUa57DQrGNpOqLB6EsvNvBuDC6dGAslhSCUiVikqmi/7/AHxauj6+DUurbYBDIY1EC6lmEQtCQMbP5+l0mjlPFhG7osQTTBQGrM1Dido81IHRY2HrBrAKMnHVm5uMIPLHs620EvJ4Ic/ZdIK5XVdMguPBaAVhlGc1HGc6gzMRhaOUFGb7yI6OTVf8tGmHjwlP68EqGDjsg/UVn8IugE7MH/WrGyZbKutBfmW9e0rfFNPbs7AbyYt/AEX/5th3HI/9dlqINKfoqXOZs7hUaGpc/ufj6PfCCeoiSnjVjHtnntZL43NJ+zsD0MnlmfR0bgdcvIzj2kSJzO62nsMvzt4Q/0sfNWa6N3NU=
