@@ -2,6 +2,7 @@ language: ruby
   - 2.12
 script:
 - bash script/simple_script.sh
+- bash script/build.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
