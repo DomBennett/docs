@@ -1,5 +1,6 @@
 language: ruby
   - 2.12
+install: "pip install github"
 script:
 - bash script/simple_script.sh
 - bash script/build.sh
