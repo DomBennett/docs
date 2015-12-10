@@ -1,8 +1,5 @@
-language: ruby
-rvm:
-- 2.1
 script:
-- bundle exec script/simple_script.sh
+- script/simple_script.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
