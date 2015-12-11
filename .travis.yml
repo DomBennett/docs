@@ -1,8 +1,9 @@
 language: ruby
   - 2.12
+sudo: required
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install pip
+  - wget https://bootstrap.pypa.io/get-pip.py
+  - python get-pip.py
 install: "pip install github"
 script:
 - bash script/simple_script.sh
