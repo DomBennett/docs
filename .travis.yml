@@ -1,5 +1,8 @@
 language: ruby
   - 2.12
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install pip
 install: "pip install github"
 script:
 - bash script/simple_script.sh
