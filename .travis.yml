@@ -1,10 +1,10 @@
 language: ruby
   - 2.12
-#sudo: required
+sudo: required
 #before_install:
 #  - wget https://bootstrap.pypa.io/get-pip.py
 #  - python get-pip.py
-install: "pip install PyGithub"
+install: "sudo pip install PyGithub"
 script:
 - bash script/simple_script.sh
 - bash script/build.sh
