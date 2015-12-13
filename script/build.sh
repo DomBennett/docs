@@ -8,7 +8,7 @@ mv !(_docs_repo) _docs_repo
 git clone https://github.com/dombennett/fge.git
 mv _docs_repo fge/
 cd fge
-# build with python
-python script/build.py
+# prebuild
+ruby script/prebuild.rb
 # build with jekyll
-jekyll build
+bundle exec jekyll build
