@@ -4,6 +4,7 @@ rvm:
 script:
 - bash script/simple_script.sh
 - bash script/build.sh
+- bash script/test.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
