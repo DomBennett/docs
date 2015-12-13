@@ -1,5 +1,5 @@
 language: ruby
-  - 2.12
+  - 2.1
 script:
 - bash script/simple_script.sh
 - bash script/build.sh
