@@ -12,3 +12,5 @@ cd fge
 ruby script/prebuild.rb
 # build with jekyll
 jekyll build
+# move back up
+cd ..
