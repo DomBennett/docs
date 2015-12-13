@@ -13,4 +13,6 @@ ruby script/prebuild.rb
 # build with jekyll
 jekyll build
 # move back up
+pwd
 cd ..
+pwd
