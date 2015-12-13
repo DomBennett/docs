@@ -11,4 +11,4 @@ cd fge
 # prebuild
 ruby script/prebuild.rb
 # build with jekyll
-bundle exec jekyll build
+jekyll build
