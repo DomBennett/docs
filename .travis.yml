@@ -5,8 +5,8 @@ script:
 - bash script/simple_script.sh
 - bash script/copy_docs.sh
 - bash script/build.sh
-- pwd; ls;
 - bash script/test.sh
+- bash script/deploy.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
