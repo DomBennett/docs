@@ -7,12 +7,8 @@ mv !(_docs_repo) _docs_repo
 # clone FGE into cwd
 git clone https://github.com/dombennett/fge.git
 mv _docs_repo fge/
-cd fge
 # prebuild
 ruby script/prebuild.rb
+(cd fge; ruby script/prebuild.rb)
 # build with jekyll
-jekyll build
-# move back up
-pwd
-cd ..
-pwd
+jekyll build -s fge

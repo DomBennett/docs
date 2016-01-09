@@ -4,6 +4,7 @@ rvm:
 script:
 - bash script/simple_script.sh
 - bash script/build.sh
+- bash pwd; ls;
 - bash script/test.sh
 env:
   global:
