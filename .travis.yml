@@ -3,8 +3,9 @@ rvm:
   - 2.1
 script:
 - bash script/simple_script.sh
+- bash script/copy_docs.sh
 - bash script/build.sh
-- bash pwd; ls;
+- pwd; ls;
 - bash script/test.sh
 env:
   global:
